@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './styles/App.css';
+import {Route,Routes} from 'react-router-dom';
+import Home from './components/Home'
+import About from './components/About'
+import Navbar from './components/Navbar'
+import {Ssignup,Bsignup} from './components/Signup'
+import {Slogin,Blogin} from './components/Login'
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    <Routes>
+          <Route element={<Home/>} path="/"></Route>
+
+          <Route element={<About/>}  path="/about"></Route>
+
+          <Route element={<Ssignup/>}  path="/ssignup"></Route>
+          <Route element={<Bsignup/>}  path="/bsignup"></Route>
+
+          <Route element={<Slogin/>}  path="/slogin"></Route>
+          <Route element={<Blogin/>}  path="/blogin"></Route>
+
+          <Route element={<ContactUs/>}  path="/contactus"></Route>
+
+          {/* <Route element={<Errorpage/>} path="*" /> */}
+      </Routes>
+    </>
   );
 }
 
