@@ -88,10 +88,10 @@ function Bsignup() {
 }
 
 export { Bsignup, Ssignup };
-https://github.com/futureKrishna/dabbafrontend
-1-git init -b main
-2-git add .
-3-git commit -m "firstcommit"
-4-git remote add origin repo-url
-5-git push -f -u origin main
-Done
+// https://github.com/futureKrishna/dabbafrontend
+// 1-git init -b main
+// 2-git add .
+// 3-git commit -m "firstcommit"
+// 4-git remote add origin repo-url
+// 5-git push -f -u origin main
+// Done
